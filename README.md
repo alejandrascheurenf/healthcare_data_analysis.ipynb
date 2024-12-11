@@ -1,25 +1,24 @@
-# Healthcare Data Analysis Project
+# Healthcare Data Analysis
 
-## Overview
-This project explores a healthcare dataset to uncover trends in patient demographics, medical conditions, and billing patterns. It demonstrates skills in data cleaning, exploratory data analysis, and visualization using Python. The analysis includes insights into chronic condition prevalence and billing trends, showcasing data analytics techniques applicable to healthcare.
+## Findings Summary
 
-## Dataset
-- **Dataset**: [Healthcare Dataset](https://www.kaggle.com/datasets/prasad22/healthcare-dataset) by Prasad22 on Kaggle.
-- **Description**: Contains data on patient demographics, medical conditions, billing amounts, and hospital-related details.
-- **License**: Refer to the dataset's Kaggle page for licensing details.
+### 1. Data Quality and Preparation
+- **Clean Dataset**: No missing values or invalid entries, ensuring robust analysis.
+- **Date and Room Validation**: Admission/discharge dates successfully processed, and all room numbers are within a valid range.
 
-## Objectives
-- Analyze patient demographics (age, gender, blood type).
-- Explore the prevalence of medical conditions across different groups.
-- Investigate billing trends by medical condition, age, and gender.
-- Demonstrate data cleaning and visualization techniques using Python.
+### 2. Demographics Insights
+- **Age Distribution**: Uniform representation of adults, with fewer records for individuals under 20 or over 80.
+- **Gender Distribution**: Balanced dataset with nearly equal male and female representation.
+- **Blood Types**: Equal distribution across all blood types, suggesting no bias in representation.
 
-## Key Findings
-- Chronic conditions like arthritis, diabetes, and hypertension are most prevalent among middle-aged and older populations.
-- Billing amounts are consistent across demographics and conditions, averaging ~$25,000.
-- Negative billing amounts, though rare, likely represent refunds or adjustments.
+### 3. Medical Condition Analysis
+- **Common Conditions**:
+  - Frequent diagnoses include arthritis, asthma, cancer, diabetes, hypertension, and obesity.
+  - Age-related trends: Arthritis and hypertension are more prevalent in older populations.
+- **Gender Trends**:
+  - Equal prevalence of conditions across genders, showing no significant gender-related disparities.
 
-## Tools and Technologies
-- **Python**: For data analysis and visualization.
-  - Libraries: Pandas, Matplotlib, Seaborn, NumPy.
-- **Jupyter Notebook**: For documenting and presenting the analysis.
+### 4. Billing Analysis
+- **Average Costs**: Consistent billing amounts (~$25,000) across all conditions, genders, and age groups.
+- **Negative Billing**: 108 entries with negative billing amounts likely represent refunds or corrections, requiring further review.
+
